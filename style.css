@@ -1,0 +1,38 @@
+.outer_container
+{
+    width:400px;
+    height:400px;
+    background-color: aquamarine;
+    margin:100px auto;
+}
+.inner_container
+{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    color: yellow;
+    display:flex;
+    justify-content: center; 
+    align-items: center;       /*Different Transform Property */
+    /*transform: scalex(1.5);
+    transform: scaley(1.5);*/
+    /*transform:scalex(1.5) scaley(2);*/          /* Scale is the how the container should be look whether it will be the shrinking and expanding of the container
+                                                  scalex container will shrink in the x axis while scaley container will shrink in the y axis */
+    /*transform: scale(1.5,2); */
+    /*transform: skew(25deg);
+    transform: skewy(15deg);*/
+    /*transform: skew(25deg,15deg); Skew property is used to slant the container in the x axis and y axis */
+    /*transform: translate(28px,60px);  (px,%) can be used in Translate property is used to move the container from one position to another position and the moving the container from parent container to other container */
+    /*transform:rotate(25deg);  work in x,y,z direction both (mainly used for animation) Rotate property is used to rotate the container in clockwise and anticlockwise direction */
+    /*transform: rotate(45deg) scale(1,3) skew(30deg) translate(50deg); */
+    transform: rotate(70deg);
+    transform-origin: bottom left; /* It is used to set the origin point of rotation */
+    transition:0.5s ease-in-out; /* It is used to set the time duration of the transformation */
+}
+
+.inner_container:hover
+{
+    background-color: darkcyan;
+    transform: rotate(-70deg);
+    transition: all 0.5s ease-in-out;
+}
